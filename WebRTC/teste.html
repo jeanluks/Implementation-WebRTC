@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>WebRTC C.E.S.A.R. School</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <!--O nosso código javascript ja faz o site funcionar, mas o site em si está longe de ser apresentavel
+        para resolver isso adicionaremos a biblioteca bootstrap e alteraremos o visual do site-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body onload="showMyFace()">
+    <h2>WebRTC do C.E.S.A.R School</h2>
+
+    <video id="yourVideo" autoplay muted></video>
+    <video id="friendsVideo" autoplay></video>
+    <br />
+    <!--Usamos a classe glyphicon para mostrar o icone da camera no botão-->
+    <button onclick="showFriendsFace()" type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+
+    <script src="teste.js"></script>
+
+</body>
+
+</html>
